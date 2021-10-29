@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Shadows+Into+Light&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  background-color: rgba(119, 119, 119, 0.301);
+  padding: 3%;
+  text-align: center;
+  float: right;
+  min-width: 20%;
+}
+
+.p1 {
+  font-weight: bold;
+  margin-top: 70%;
+  margin-left: 20%;
+  color: brown;
+  text-align: justify;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.p2 {
+  color: white;
+  margin-left: 20%;
+  text-align: justify;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.p3 {
+  color: white;
+  margin-left: 20%;
+  text-align: justify;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#imagem-fundo {
+  background-image: url(../midea/img/emp4.jfif);
+  background-size: cover;
+}
+
+#imgLogoUpf {
+  height: 60%;
+  width: 70%;
+}
+
+#checkboxForm {
+  color: white;
+}
+
+#corh4 {
+  color: white;
+}
+
+#corh5 {
+  color: white;
+}
+
+#corLink {
+  color: white;
+}
+
+.card1 {
+  display: block;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card2 {
+  display: inline-block;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloCard {
+  color: red;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.conteudoCard {
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulos {
+  text-align: center;
+  margin-top: 12%;
+  margin-bottom: 15%;
+  color: brown;
+  font-weight: bold;
+  font-size: 26px;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+#videos {
+  text-align: center;
+}
+.videos {
+  margin-bottom: 5%;
+}
+
+#banner {
+  background-image: url(../midea/img/emp5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+#rodape {
+  text-align: center;
+  margin-top: 1%;
+  background-color: white;
+}
+
+#redesSociais {
+  margin-top: 3%;
+  background-color: white;
+}
+
+#centro-infoCards {
+  text-align: center;
+}
+
+[data-animacao] {
+  opacity: 0;
+  transition: 0.3s;
+}
+[data-animacao='left'] {
+  transform: translate3d(-50px, 0px, 0px);
+}
+[data-animacao='right'] {
+  transform: translate3d(50px, 0px, 0px);
+}
+[data-animacao].animacao {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.titulos-banner {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  color: brown;
+  font-weight: bold;
+  font-size: 26px;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+#imgredesSociais {
+  margin-top: 2%;
+}

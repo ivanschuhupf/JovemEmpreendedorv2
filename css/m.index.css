@@ -1,0 +1,105 @@
+form {
+  text-align: center;
+  padding-bottom: 10%;
+}
+#formu {
+  background-image: url(../midea/img/empreendedorMobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tituloProjeto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.row {
+  text-align: center;
+  background-color: rgb(61, 61, 61);
+}
+
+input {
+  opacity: 0.8;
+}
+
+.card1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: block;
+  background-color: transparent;
+  height: 30%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+  background-color: transparent;
+  height: 30%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloCard {
+  color: red;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.conteudoCard {
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulos {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: brown;
+  font-size: 20px;
+  width: 100%;
+}
+
+#videos {
+  text-align: center;
+}
+
+#banner {
+  background-image: url(../midea/img/emp5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3%;
+}
+
+#rodape {
+  margin-top: 3%;
+  background-color: white;
+}
+
+#redesSociais {
+  margin-top: 3%;
+  background-color: white;
+}
+
+#checkboxForm {
+  color: white;
+}
+
+#corh4 {
+  color: white;
+}
+
+#corh5 {
+  color: white;
+}
+
+#corLink {
+  color: white;
+}
