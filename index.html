@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Jovem Empreendedor</title>
   </head>
   <body>
@@ -113,85 +115,98 @@
       <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-          <p class="titulos">
-            Desenvolva suas ideias dentro da Universidade e conte com o auxílio
-            de professores e profissionais de diferentes áreas para seguir no
-            mundo dos negócios.
-          </p>
+          <div data-aos="zoom-in">
+            <p class="titulos">
+              Desenvolva suas ideias dentro da Universidade e conte com o
+              auxílio de professores e profissionais de diferentes áreas para
+              seguir no mundo dos negócios.
+            </p>
+          </div>
         </div>
         <div class="col-lg-4"></div>
       </div>
       <div class="col-lg-2"></div>
       <div class="row">
-        <div class="card1 col-lg-4" data-animacao="left">
-          <table>
-            <tr>
-              <td>
-                <img style="margin-right: 15px" src="midea/img/ideia.png" />
-              </td>
-              <td>
-                <p class="tituloCard">Conecte-se à transformação</p>
-                <p class="conteudoCard">
-                  Aperfeiçoe os seus conhecimentos, conheça a experiência
-                  acadêmica e se conecte ao mercado com a ajuda do Instituto
-                  Manager, o Google for Education e a UPF.
-                </p>
-              </td>
-            </tr>
-          </table>
+        <div class="card1 col-lg-4">
+          <div data-aos="fade-right">
+            <table>
+              <tr>
+                <td>
+                  <img style="margin-right: 15px" src="midea/img/ideia.png" />
+                </td>
+                <td>
+                  <p class="tituloCard">Conecte-se à transformação</p>
+                  <p class="conteudoCard">
+                    Aperfeiçoe os seus conhecimentos, conheça a experiência
+                    acadêmica e se conecte ao mercado com a ajuda do Instituto
+                    Manager, o Google for Education e a UPF.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div class="card2 col-lg-4" data-animacao="right">
-          <table>
-            <tr>
-              <td>
-                <img style="margin-right: 15px" src="midea/img/mao.png" />
-              </td>
-              <td>
-                <p class="tituloCard">Você no mundo dos negócios</p>
-                <p class="conteudoCard">
-                  Desenvolva sua própria empresa em 12 meses. Planeje cada setor
-                  ou serviço, aprenda a descobrir oportunidades que surgem no
-                  dia-a-dia e crie a sua identidade profissional.
-                </p>
-              </td>
-            </tr>
-          </table>
+        <div class="card2 col-lg-4">
+          <div data-aos="fade-left">
+            <table>
+              <tr>
+                <td>
+                  <img style="margin-right: 15px" src="midea/img/mao.png" />
+                </td>
+                <td>
+                  <p class="tituloCard">Você no mundo dos negócios</p>
+                  <p class="conteudoCard">
+                    Desenvolva sua própria empresa em 12 meses. Planeje cada
+                    setor ou serviço, aprenda a descobrir oportunidades que
+                    surgem no dia-a-dia e crie a sua identidade profissional.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-2"></div>
-      <div class="row">
-        <div class="card1 col-lg-4" data-animacao="left">
-          <table>
-            <tr>
-              <td>
-                <img style="margin-right: 15px" src="midea/img/cavalo.png" />
-              </td>
-              <td>
-                <p class="tituloCard">Mentorias</p>
-                <p class="conteudoCard">
-                  Conte com mentorias do Balcão do Empreendedor UPF.
-                </p>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="card2 col-lg-4" data-animacao="right">
-          <table>
-            <tr>
-              <td>
-                <img
-                  style="margin-right: 15px"
-                  src="midea/img/biblioteca.png"
-                />
-              </td>
-              <td>
-                <p class="tituloCard">Biblioteca Virtual</p>
-                <p class="conteudoCard">
-                  Tenha acesso à biblioteca virtual da Universidade.
-                </p>
-              </td>
-            </tr>
-          </table>
+        <div class="col-lg-2"></div>
+        <div class="row">
+          <div class="card1 col-lg-4">
+            <div data-aos="fade-right">
+              <table>
+                <tr>
+                  <td>
+                    <img
+                      style="margin-right: 15px"
+                      src="midea/img/cavalo.png"
+                    />
+                  </td>
+                  <td>
+                    <p class="tituloCard">Mentorias</p>
+                    <p class="conteudoCard">
+                      Conte com mentorias do Balcão do Empreendedor UPF.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card2 col-lg-4">
+            <div data-aos="fade-left">
+              <table>
+                <tr>
+                  <td>
+                    <img
+                      style="margin-right: 15px"
+                      src="midea/img/biblioteca.png"
+                    />
+                  </td>
+                  <td>
+                    <p class="tituloCard">Biblioteca Virtual</p>
+                    <p class="conteudoCard">
+                      Tenha acesso à biblioteca virtual da Universidade.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -200,26 +215,32 @@
       <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-          <p class="titulos">
-            Assista agora os videos dos apoiadores, explicando um pouco mais
-            sobre o que é este projeto.
-          </p>
+          <div data-aos="zoom-in">
+            <p class="titulos">
+              Assista agora os videos dos apoiadores, explicando um pouco mais
+              sobre o que é este projeto.
+            </p>
+          </div>
         </div>
         <div class="col-lg-4"></div>
       </div>
       <div class="videos">
-        <iframe
-          data-animacao="left"
-          height="350px"
-          width="350px"
-          src="midea/video/videoUPF.mp4"
-        ></iframe>
-        <iframe
-          data-animacao="right"
-          height="350px"
-          width="350px"
-          src="midea/video/videoXP.mp4"
-        ></iframe>
+        <span data-aos="fade-right">
+          <iframe
+            data-animacao="left"
+            height="350px"
+            width="350px"
+            src="midea/video/videoUPF.mp4"
+          ></iframe>
+        </span>
+        <span data-aos="fade-left">
+          <iframe
+            data-animacao="right"
+            height="350px"
+            width="350px"
+            src="midea/video/videoXP.mp4"
+          ></iframe>
+        </span>
       </div>
     </section>
     <!--  *********   BANNER   **********  -->
@@ -285,4 +306,9 @@
     type="text/javascript"
     src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/zGGa615171.js?t=1"
   ></script>
+  <script>
+    AOS.init({
+      duration: 600
+    })
+  </script>
 </html>
