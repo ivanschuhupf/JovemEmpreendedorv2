@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Jovem Empreendedor</title>
@@ -67,13 +69,15 @@
           <option>Segundo Ano</option>
           <option>Terceiro Ano</option>
         </select>
+        <br/>
+
+        <select id="estados" required class="form-control">
+          <option selected disabled value="">Cidade</option>
+        
+        </select>
         <br />
-        <input
-          type="text"
-          class="form-control"
-          id="cidade"
-          placeholder="Cidade de Origem"
-        /><br />
+
+            
         <input
           type="text"
           class="form-control"
@@ -268,6 +272,8 @@
         /></a>
       </div>
     </section>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
   </body>
   <script type="text/javascript" src="js/telefone.js"></script>
   <script type="text/javascript" src="js/animacao.js"></script>
