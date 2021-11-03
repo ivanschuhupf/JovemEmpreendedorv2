@@ -43,16 +43,9 @@
         <option>TERCEIRO ANO</option>
       </select>
       <br />
-
-      <select id="estados" required class="form-control">
-        <option selected disabled value="">Cidade</option>
-      </select>
-      <br />
       <input required type="text" name="f-cidade" class="form-control" id="cidade" placeholder="Cidade" /><br />
       <input type="text" name="f-primeiraopcao" class="form-control" id="primeira" placeholder="Primeira Opção de Graduação" required /><br />
       <input type="text" name="f-segundaopcao" class="form-control" id="segunda" placeholder="Segunda Opção de Graduação" /><br />
-
-
       <div>
         <label id="checkboxForm" class="checkbox-inline"><input type="checkbox" value="" required />Estou ciente e aceito os
           termos estabelecidos pela LGPD.</label>
@@ -64,9 +57,12 @@
           Tratamento de Dados Pessoais em conformidade com a LGPD</a>
       </div>
       <br />
-
-      <div class="captcha">
-        <div div class="g-recaptcha" data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0"></div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div div class="g-recaptcha" data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0"></div>
+        </div>
+        <div class="col-lg-2"></div>
       </div>
       <br />
       <button type="submit" class="btn btn-danger">CADASTRAR</button><br />
@@ -128,41 +124,41 @@
           </table>
         </div>
       </div>
-      <div class="col-lg-2"></div>
-      <div class="row">
-        <div class="card1 col-lg-4">
-          <div data-aos="fade-right">
-            <table>
-              <tr>
-                <td>
-                  <img style="margin-right: 15px" src="midea/img/cavalo.png" />
-                </td>
-                <td>
-                  <p class="tituloCard">Mentorias</p>
-                  <p class="conteudoCard">
-                    Conte com mentorias do Balcão do Empreendedor UPF.
-                  </p>
-                </td>
-              </tr>
-            </table>
-          </div>
+    </div>
+    <div class="col-lg-2"></div>
+    <div class="row">
+      <div class="card1 col-lg-4">
+        <div data-aos="fade-right">
+          <table>
+            <tr>
+              <td>
+                <img style="margin-right: 15px" src="midea/img/cavalo.png" />
+              </td>
+              <td>
+                <p class="tituloCard">Mentorias</p>
+                <p class="conteudoCard">
+                  Conte com mentorias do Balcão do Empreendedor UPF.
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="card2 col-lg-4">
-          <div data-aos="fade-left">
-            <table>
-              <tr>
-                <td>
-                  <img style="margin-right: 15px" src="midea/img/biblioteca.png" />
-                </td>
-                <td>
-                  <p class="tituloCard">Biblioteca Virtual</p>
-                  <p class="conteudoCard">
-                    Tenha acesso à biblioteca virtual da Universidade.
-                  </p>
-                </td>
-              </tr>
-            </table>
-          </div>
+      </div>
+      <div class="card2 col-lg-4">
+        <div data-aos="fade-left">
+          <table>
+            <tr>
+              <td>
+                <img style="margin-right: 15px" src="midea/img/biblioteca.png" />
+              </td>
+              <td>
+                <p class="tituloCard">Biblioteca Virtual</p>
+                <p class="conteudoCard">
+                  Tenha acesso à biblioteca virtual da Universidade.
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>

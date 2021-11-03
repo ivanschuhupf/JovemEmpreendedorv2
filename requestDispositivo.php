@@ -19,5 +19,5 @@ if ($dispositivo == "mobile") { //Se for dispositivo movel
 }
 if ($dispositivo == "computador") { //Se for computador
 
-  require_once 'index.html';
+  require_once 'index.php';
 }
