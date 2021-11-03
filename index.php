@@ -60,7 +60,7 @@
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-          <div div class="g-recaptcha" data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0"></div>
+          <div div class="g-recaptcha" data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0" required></div>
         </div>
         <div class="col-lg-2"></div>
       </div>
