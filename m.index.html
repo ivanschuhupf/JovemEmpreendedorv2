@@ -11,6 +11,9 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Jovem Empreendedor</title>
   </head>
   <body>
@@ -81,16 +84,29 @@
         </div>
         <div>
           <label id="checkboxForm" class="checkbox-inline"
-            ><input type="checkbox" value="" required />Aceito o Termo
-            LGPD</label
+            ><input type="checkbox" value="" required />Estou ciente e aceito os
+            termos estabelecidos pela LGPD.</label
           >
         </div>
         <br />
 
         <div>
           <a id="corLink" href="http://www.upf.br" target="_blank"
-            >Clique aqui para ler o Termo LGPD</a
+            >Clique aqui para ler Termo de Consentimento para Armazenamento e
+            Tratamento de Dados Pessoais em conformidade com a LGPD</a
           >
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-8">
+            <div
+              div
+              class="g-recaptcha"
+              data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0"
+            ></div>
+          </div>
+          <div class="col-xs-2"></div>
         </div>
         <br />
         <button type="submit" class="btn btn-danger">CADASTRAR</button><br />

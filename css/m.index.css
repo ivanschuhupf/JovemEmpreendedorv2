@@ -22,6 +22,9 @@ form {
 input {
   opacity: 0.8;
 }
+#checkboxForm {
+  color: white;
+}
 
 .card1 {
   margin-top: 5%;
@@ -43,6 +46,9 @@ input {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+.row {
+  background-color: transparent;
 }
 
 .tituloCard {
