@@ -13,6 +13,10 @@ form {
   min-width: 20%;
 }
 
+input {
+  text-transform: uppercase;
+}
+
 .p1 {
   font-weight: bold;
   margin-top: 70%;

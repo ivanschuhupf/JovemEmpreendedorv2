@@ -25,13 +25,14 @@
           <p class="p3">Experiências que transformam ideias</p>
         </div>
       </div>
-      <form class="col-lg-3" action="">
+      <form class="col-lg-3" action="recebeDadosForm.php" method="post">
         <img id="imgLogoUpf" src="midea/img/logoupf.png" />
         <h4 id="corh4">SEJA UM EMPREENDEDOR</h4>
         <h5 id="corh5">Preencha o formulário e inscreva-se!</h5>
         <br />
         <input
           type="text"
+          name="f-nome"
           class="form-control"
           id="nome"
           placeholder="Nome"
@@ -41,6 +42,7 @@
         /><br />
         <input
           type="email"
+          name="f-email"
           class="form-control"
           id="email"
           placeholder="E-mail"
@@ -49,7 +51,7 @@
         <input
           class="form-control"
           type="tel"
-          name="telefone"
+          name="f-telefone"
           id="telefone"
           placeholder="Telefone"
           maxlength="15"
@@ -57,27 +59,31 @@
         /><br />
         <input
           type="text"
+          name="f-data"
           class="form-control"
           placeholder="Data de Nascimento"
           onfocus="(this.type='date')"
           onblur="if(this.value==''){this.type='text'}"
           required
         /><br />
-        <select required class="form-control">
-          <option selected disabled value="">Ano que está cursando</option>
-          <option>Primeiro Ano</option>
-          <option>Segundo Ano</option>
-          <option>Terceiro Ano</option>
+        <select required class="form-control" name="f-anocursando">
+          <option selected disabled value="">ANO QUE ESTÁ CURSANDO</option>
+          <option>PRIMEIRO ANO</option>
+          <option>SEGUNDO ANO</option>
+          <option>TERCEIRO ANO</option>
         </select>
         <br />
         <input
+          required
           type="text"
+          name="f-cidade"
           class="form-control"
           id="cidade"
-          placeholder="Cidade de Origem"
+          placeholder="Cidade"
         /><br />
         <input
           type="text"
+          name="f-primeiraopcao"
           class="form-control"
           id="primeira"
           placeholder="Primeira Opção de Graduação"
@@ -85,21 +91,23 @@
         /><br />
         <input
           type="text"
+          name="f-segundaopcao"
           class="form-control"
           id="segunda"
           placeholder="Segunda Opção de Graduação"
         /><br />
         <div>
           <label id="checkboxForm" class="checkbox-inline"
-            ><input type="checkbox" value="" required />Aceito o Termo
-            LGPD</label
+            ><input type="checkbox" value="" required />Estou ciente e aceito os
+            termos estabelecidos pela LGPD.</label
           >
         </div>
         <br />
 
         <div>
           <a id="corLink" href="http://www.upf.br" target="_blank"
-            >Clique aqui para ler o Termo LGPD</a
+            >Clique aqui para ler Termo de Consentimento para Armazenamento e
+            Tratamento de Dados Pessoais em conformidade com a LGPD</a
           >
         </div>
         <br />
@@ -223,7 +231,6 @@
       <div class="videos">
         <span data-aos="fade-right">
           <iframe
-            data-animacao="left"
             height="350px"
             width="350px"
             src="midea/video/videoUPF.mp4"
@@ -231,7 +238,7 @@
         </span>
         <span data-aos="fade-left">
           <iframe
-            data-animacao="right"
+            title="Tiago XP"
             height="350px"
             width="350px"
             src="midea/video/videoXP.mp4"
