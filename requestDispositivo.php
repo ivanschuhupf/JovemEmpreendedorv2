@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+<?php
+$iphone = strpos($_SERVER['HTTP_USER_AGENT'], "iPhone");
+$ipad = strpos($_SERVER['HTTP_USER_AGENT'], "iPad");
+$android = strpos($_SERVER['HTTP_USER_AGENT'], "Android");
+$palmpre = strpos($_SERVER['HTTP_USER_AGENT'], "webOS");
+$berry = strpos($_SERVER['HTTP_USER_AGENT'], "BlackBerry");
+$ipod = strpos($_SERVER['HTTP_USER_AGENT'], "iPod");
+$symbian = strpos($_SERVER['HTTP_USER_AGENT'], "Symbian");
+$windowsphone = strpos($_SERVER['HTTP_USER_AGENT'], "Windows Phone");
+
+if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian || $windowsphone == true) { //Verifica se é mobile ou desktop
+  $dispositivo = "mobile";
+} else {
+  $dispositivo = "computador";
+}
+
+if ($dispositivo == "mobile") { //Se for dispositivo movel
+  require_once 'm.index.html';
+}
+if ($dispositivo == "computador") { //Se for computador
+
+  require_once 'index.html';
+}
+=======
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -9,10 +35,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Jovem Empreendedor</title>
   </head>
   <body>
@@ -25,7 +54,11 @@
           <p class="p3">Experiências que transformam ideias</p>
         </div>
       </div>
+<<<<<<<< HEAD:index.php
+      <form method="post" class="col-lg-3" action="">
+========
       <form class="col-lg-3" action="recebeDadosForm.php" method="post">
+>>>>>>>> 0ecbd709205193cc7b25ddc19d611e25f68e0d9b:index.html
         <img id="imgLogoUpf" src="midea/img/logoupf.png" />
         <h4 id="corh4">SEJA UM EMPREENDEDOR</h4>
         <h5 id="corh5">Preencha o formulário e inscreva-se!</h5>
@@ -72,7 +105,16 @@
           <option>SEGUNDO ANO</option>
           <option>TERCEIRO ANO</option>
         </select>
+        <br/>
+
+        <select id="estados" required class="form-control">
+          <option selected disabled value="">Cidade</option>
+        </select>
         <br />
+<<<<<<<< HEAD:index.php
+
+            
+========
         <input
           required
           type="text"
@@ -81,6 +123,7 @@
           id="cidade"
           placeholder="Cidade"
         /><br />
+>>>>>>>> 0ecbd709205193cc7b25ddc19d611e25f68e0d9b:index.html
         <input
           type="text"
           name="f-primeiraopcao"
@@ -96,6 +139,8 @@
           id="segunda"
           placeholder="Segunda Opção de Graduação"
         /><br />
+      
+    
         <div>
           <label id="checkboxForm" class="checkbox-inline"
             ><input type="checkbox" value="" required />Estou ciente e aceito os
@@ -111,8 +156,14 @@
           >
         </div>
         <br />
+
+        <div class="captcha">
+        <div div class="g-recaptcha" data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0"></div>   
+        </div>
+        <br />
         <button type="submit" class="btn btn-danger">CADASTRAR</button><br />
-      </form>
+        </form>
+        
     </section>
     <!-- ************* INFORMATIVOS ************  -->
     <section id="centro-infoCards" class="container-fluid col-sm-12">
@@ -313,3 +364,4 @@
     })
   </script>
 </html>
+>>>>>>> 0ecbd709205193cc7b25ddc19d611e25f68e0d9b
