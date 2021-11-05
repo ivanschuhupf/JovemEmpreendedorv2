@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  
   <title>Jovem Empreendedor</title>
 </head>
 
@@ -32,22 +32,23 @@
       <h4 id="corh4">SEJA UM EMPREENDEDOR</h4>
       <h5 id="corh5">Preencha o formulário e inscreva-se!</h5>
       <br />
-      <input type="text" name="f-nome" class="form-control" id="nome" placeholder="Nome" minlength="3" maxlength="40" required /><br />
-      <input type="email" name="f-email" class="form-control" id="email" placeholder="E-mail" required /><br />
-      <input class="form-control" type="tel" name="f-telefone" id="telefone" placeholder="Telefone" maxlength="15" required /><br />
-      <input type="text" name="f-data" class="form-control" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required /><br />
-      <select required class="form-control" name="f-anocursando">
+      <input type="text" name="f-nome" class="form-control" id="nome" placeholder="Nome" minlength="3" maxlength="50" required /><br />
+      <input type="email" name="f-email" class="form-control" id="email" placeholder="E-mail"  /><br />
+      <input class="form-control" type="tel" name="f-telefone" id="telefone" placeholder="Telefone" maxlength="15" /><br />
+      <input type="text" name="f-data" class="form-control" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"  /><br />
+      <select class="form-control" name="f-anocursando">
         <option selected disabled value="">ANO QUE ESTÁ CURSANDO</option>
         <option>PRIMEIRO ANO</option>
         <option>SEGUNDO ANO</option>
         <option>TERCEIRO ANO</option>
       </select>
       <br />
-      <input required type="text" name="f-cidade" class="form-control" id="cidade" placeholder="Cidade" /><br />
-      <input type="text" name="f-primeiraopcao" class="form-control" id="primeira" placeholder="Primeira Opção de Graduação" required /><br />
+      <input  type="text" name="f-cidade" class="form-control" id="cidade" placeholder="Cidade" /><br />
+      <input type="text" name="f-primeiraopcao" class="form-control" id="primeira" placeholder="Primeira Opção de Graduação"  /><br />
       <input type="text" name="f-segundaopcao" class="form-control" id="segunda" placeholder="Segunda Opção de Graduação" /><br />
+      <input type="text" name="inputCaptcha" class="form-control"  id="inputCaptcha">
       <div>
-        <label id="checkboxForm" class="checkbox-inline"><input type="checkbox" value="" required />Estou ciente e aceito os
+        <label id="checkboxForm" class="checkbox-inline"><input type="checkbox" value=""  />Estou ciente e aceito os
           termos estabelecidos pela LGPD.</label>
       </div>
       <br />
@@ -57,15 +58,8 @@
           Tratamento de Dados Pessoais em conformidade com a LGPD</a>
       </div>
       <br />
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-          <div div class="g-recaptcha" data-sitekey="6LcvjxAdAAAAAHgwZT51Ujot4cS87MK5hCJVPK_0" required></div>
-        </div>
-        <div class="col-lg-2"></div>
-      </div>
-      <br />
-      <button type="submit" class="btn btn-danger">CADASTRAR</button><br />
+      <button id="btnSubmit" type="submit" class="btn btn-danger">CADASTRAR</button><br />
+      <div class="col-xs-2"></div>
     </form>
 
   </section>
@@ -220,6 +214,8 @@
     </div>
   </section>
 </body>
+
+<script type="text/javascript" src="js/captcha.js"></script>
 <script type="text/javascript" src="js/telefone.js"></script>
 <script type="text/javascript" src="js/animacao.js"></script>
 <link rel="stylesheet" href="https://cdn.privacytools.com.br/public_api/banner/style/zGGa615171.css?t=1" />
