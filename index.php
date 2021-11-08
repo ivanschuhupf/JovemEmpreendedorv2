@@ -35,7 +35,7 @@
       <input type="text" name="f-nome" class="form-control" id="nome" placeholder="Nome" minlength="3" maxlength="50" required /><br />
       <input type="email" name="f-email" class="form-control" id="email" placeholder="E-mail"  /><br />
       <input class="form-control" type="tel" name="f-telefone" id="telefone" placeholder="Telefone" maxlength="15" /><br />
-      <input type="text" name="f-data" class="form-control" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"  /><br />
+      <input type="text"  class="form-control" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="if(this.value=='00/00/0000'){this.type='text'}"  /><br />
       <select class="form-control" name="f-anocursando">
         <option selected disabled value="">ANO QUE ESTÁ CURSANDO</option>
         <option>PRIMEIRO ANO</option>

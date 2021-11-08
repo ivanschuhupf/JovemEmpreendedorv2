@@ -28,3 +28,6 @@ h1{
 u{
   font-size: 18px;
 }
+li{
+  list-style-type: none;
+}
